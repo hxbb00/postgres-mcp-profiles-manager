@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+
+  --bg-base: #f5f7fa;
+  --bg-panel: #ffffff;
+  --bg-table: #ffffff;
+  --bg-table-header: #f0f3f8;
+  --bg-row-hover: #f5f8fc;
+  --bg-raised: #eef2f7;
+  --bg-raised-hover: #e2e9f2;
+  --bg-input: #ffffff;
+  --border-subtle: #dde4ee;
+  --border-strong: #c6d0de;
+  --text-primary: #1c2733;
+  --text-secondary: #45526b;
+  --text-muted: #728197;
+  --accent-bg: #336791;
+  --accent-bg-hover: #2b5a7e;
+  --accent-border: #2b5a7e;
+  --overlay: rgba(28, 39, 51, 0.45);
+  --ro-bg: #e5f4ec;
+  --ro-text: #1a7f5a;
+  --ro-border: #b8dfcc;
+  --rw-bg: #fdf1dd;
+  --rw-text: #a06a12;
+  --rw-border: #eed5ab;
+  --ok-bg: #e5f4ec;
+  --ok-text: #1a7f5a;
+  --ok-border: #b8dfcc;
+  --err-bg: #fbe9e7;
+  --err-text: #c2402f;
+  --err-border: #f0c4bd;
+  --pip-off: #c6d0de;
+  --danger-bg: #fbe9e7;
+  --danger-text: #c2402f;
+  --danger-border: #f0c4bd;
+  --danger-bg-hover: #f6d5d1;
+  --danger-confirm-bg: #b3372b;
+  --danger-confirm-hover: #9c2f25;
+  --danger-confirm-border: #9c2f25;
+  --scrollbar: #c6d0de;
+}
+
+.dark {
+  color-scheme: dark;
+
+  --bg-base: #0e1420;
+  --bg-panel: #151f30;
+  --bg-table: #111927;
+  --bg-table-header: #151f30;
+  --bg-row-hover: #16202f;
+  --bg-raised: #1a2438;
+  --bg-raised-hover: #223050;
+  --bg-input: #0d1420;
+  --border-subtle: #1c2740;
+  --border-strong: #2a3a58;
+  --text-primary: #e8eef6;
+  --text-secondary: #aeb9cc;
+  --text-muted: #7d8ba3;
+  --accent-bg: #336791;
+  --accent-bg-hover: #3d7ab0;
+  --accent-border: #4a86b8;
+  --overlay: rgba(0, 0, 0, 0.6);
+  --ro-bg: #1d3a2f;
+  --ro-text: #3fb68b;
+  --ro-border: #2d5a45;
+  --rw-bg: #3d2e1a;
+  --rw-text: #e3a13c;
+  --rw-border: #5c4526;
+  --ok-bg: #1d3a2f;
+  --ok-text: #3fb68b;
+  --ok-border: #2d5a45;
+  --err-bg: #3d1d23;
+  --err-text: #f47067;
+  --err-border: #5c2b33;
+  --pip-off: #3a4a68;
+  --danger-bg: #2a1b20;
+  --danger-text: #e88c85;
+  --danger-border: #4a2a30;
+  --danger-bg-hover: #3d1d23;
+  --danger-confirm-bg: #8c2f39;
+  --danger-confirm-hover: #a63945;
+  --danger-confirm-border: #b34751;
+  --scrollbar: #25314a;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mono {
+  font-family: "Cascadia Code", "Cascadia Mono", Consolas, monospace;
+}
+
+::selection {
+  background: #539bf5;
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar);
+  border-radius: 5px;
+  border: 2px solid var(--bg-base);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-strong);
+}

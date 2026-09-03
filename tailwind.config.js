@@ -1,0 +1,42 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  darkMode: "class",
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        page: "var(--bg-base)",
+        panel: "var(--bg-panel)",
+        tbl: "var(--bg-table)",
+        "tbl-header": "var(--bg-table-header)",
+        "row-hover": "var(--bg-row-hover)",
+        raised: "var(--bg-raised)",
+        "raised-hover": "var(--bg-raised-hover)",
+        input: "var(--bg-input)",
+        subtle: "var(--border-subtle)",
+        strong: "var(--border-strong)",
+        primary: "var(--text-primary)",
+        secondary: "var(--text-secondary)",
+        muted: "var(--text-muted)",
+        accent: "var(--accent-bg)",
+        "accent-hover": "var(--accent-bg-hover)",
+        "accent-border": "var(--accent-border)",
+        ro: { bg: "var(--ro-bg)", text: "var(--ro-text)", border: "var(--ro-border)" },
+        rw: { bg: "var(--rw-bg)", text: "var(--rw-text)", border: "var(--rw-border)" },
+        ok: { bg: "var(--ok-bg)", text: "var(--ok-text)", border: "var(--ok-border)" },
+        err: { bg: "var(--err-bg)", text: "var(--err-text)", border: "var(--err-border)" },
+        danger: {
+          bg: "var(--danger-bg)",
+          text: "var(--danger-text)",
+          border: "var(--danger-border)",
+          hover: "var(--danger-bg-hover)",
+          confirm: "var(--danger-confirm-bg)",
+          "confirm-hover": "var(--danger-confirm-hover)",
+          "confirm-border": "var(--danger-confirm-border)",
+        },
+        "pip-off": "var(--pip-off)",
+      },
+    },
+  },
+  plugins: [],
+};

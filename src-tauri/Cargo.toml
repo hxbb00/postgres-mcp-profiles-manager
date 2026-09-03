@@ -1,0 +1,28 @@
+[package]
+name = "postgres-mcp-profiles"
+version = "0.1.0"
+description = "PostgreSQL connection profile manager"
+authors = []
+edition = "2021"
+
+[lib]
+name = "profiles_manager_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-shell = "2"
+serde = { version = "1", features = ["derive"] }
+serde_yaml = "0.9"
+keyring = { version = "3", features = ["windows-native"] }
+tokio-postgres = "0.7"
+tokio = { version = "1", features = ["full"] }
+dirs = "5"
+thiserror = "2"
+uuid = { version = "1", features = ["v4"] }
+
+[dev-dependencies]
+tempfile = "3"
