@@ -25,6 +25,9 @@ jobs:
         with:
           workspaces: src-tauri
 
+      - name: Install frontend deps
+        run: npm ci
+
       - name: Frontend type check
         run: npx tsc --noEmit
 
